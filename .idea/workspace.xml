@@ -1,13 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="45e1f910-e0c2-45c3-a9aa-40539355cb16" name="Default" comment="" />
+    <list default="true" id="45e1f910-e0c2-45c3-a9aa-40539355cb16" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/biz/rightshift/core/rules/atomic/Eq.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/biz/rightshift/core/rules/atomic/Gt.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/biz/rightshift/core/rules/atomic/Lt.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/biz/rightshift/core/rules/RuleParameter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/biz/rightshift/core/rules/examples/SimpleMinLevelRule.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/biz/rightshift/core/rules/AbstractRule.java" afterPath="$PROJECT_DIR$/src/biz/rightshift/core/rules/atomic/AbstractRule.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/biz/rightshift/core/rules/examples/ComplexMinMaxDayOfWeekRule.java" afterPath="$PROJECT_DIR$/src/biz/rightshift/core/rules/examples/ComplexMinMaxDayOfWeekRule.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/rules_management/Gemfile.lock" afterPath="$PROJECT_DIR$/web/rules_management/Gemfile.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/rules_management/Gemfile" afterPath="$PROJECT_DIR$/web/rules_management/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/biz/rightshift/core/rules/Rule.java" afterPath="$PROJECT_DIR$/src/biz/rightshift/core/rules/Rule.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/biz/rightshift/core/rules/RuleFactory.java" afterPath="$PROJECT_DIR$/src/biz/rightshift/core/rules/RuleFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/biz/rightshift/core/rules/test/RulesEngineTest.java" afterPath="$PROJECT_DIR$/test/biz/rightshift/core/rules/test/RulesEngineTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/rules_management/config/database.yml" afterPath="$PROJECT_DIR$/web/rules_management/config/database.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/rules_management/db/schema.rb" afterPath="$PROJECT_DIR$/web/rules_management/db/schema.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="RulesEngine.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/RulesEngineTest.java" changelist="45e1f910-e0c2-45c3-a9aa-40539355cb16" time="1379372231569" ignored="false" />
+    <file path="/RulesEngineTest.java" changelist="45e1f910-e0c2-45c3-a9aa-40539355cb16" time="1379455215283" ignored="false" />
     <file path="/a.dummy" changelist="45e1f910-e0c2-45c3-a9aa-40539355cb16" time="1379359012396" ignored="false" />
-    <file path="/Rule.java" changelist="45e1f910-e0c2-45c3-a9aa-40539355cb16" time="1379372046000" ignored="false" />
-    <file path="/RuleFactory.java" changelist="45e1f910-e0c2-45c3-a9aa-40539355cb16" time="1379371863007" ignored="false" />
+    <file path="/Rule.java" changelist="45e1f910-e0c2-45c3-a9aa-40539355cb16" time="1379450193640" ignored="false" />
+    <file path="/RuleFactory.java" changelist="45e1f910-e0c2-45c3-a9aa-40539355cb16" time="1379456712293" ignored="false" />
+    <file path="/AbstractRule.java" changelist="45e1f910-e0c2-45c3-a9aa-40539355cb16" time="1379457687412" ignored="false" />
+    <file path="/Dummy.txt" changelist="45e1f910-e0c2-45c3-a9aa-40539355cb16" time="1379442725380" ignored="false" />
+    <file path="/Gemfile" changelist="45e1f910-e0c2-45c3-a9aa-40539355cb16" time="1379442840007" ignored="false" />
+    <file path="/database.yml" changelist="45e1f910-e0c2-45c3-a9aa-40539355cb16" time="1379443007287" ignored="false" />
+    <file path="/ComplexMinMaxDayOfWeekRule.java" changelist="45e1f910-e0c2-45c3-a9aa-40539355cb16" time="1379457215765" ignored="false" />
+    <file path="/OPERATOR.java" changelist="45e1f910-e0c2-45c3-a9aa-40539355cb16" time="1379444456638" ignored="false" />
+    <file path="/MinLevel.java" changelist="45e1f910-e0c2-45c3-a9aa-40539355cb16" time="1379450470573" ignored="false" />
+    <file path="/MaxLevel.java" changelist="45e1f910-e0c2-45c3-a9aa-40539355cb16" time="1379450446450" ignored="false" />
+    <file path="/Eq.java" changelist="45e1f910-e0c2-45c3-a9aa-40539355cb16" time="1379450646555" ignored="false" />
+    <file path="/fragment.java" changelist="45e1f910-e0c2-45c3-a9aa-40539355cb16" time="1379452693176" ignored="false" />
+    <file path="/AtomicRule.java" changelist="45e1f910-e0c2-45c3-a9aa-40539355cb16" time="1379450283303" ignored="false" />
+    <file path="/SimpleMinLevelRule.java" changelist="45e1f910-e0c2-45c3-a9aa-40539355cb16" time="1379457172894" ignored="false" />
+    <file path="/RuleParameter.java" changelist="45e1f910-e0c2-45c3-a9aa-40539355cb16" time="1379455032821" ignored="false" />
+    <file path="/RuleParameterException.java" changelist="45e1f910-e0c2-45c3-a9aa-40539355cb16" time="1379454804459" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +53,6 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -57,6 +87,51 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <line_breakpoints>
+      <breakpoint url="file://$PROJECT_DIR$/src/biz/rightshift/core/rules/RuleFactory.java" line="33" class="biz.rightshift.core.rules.RuleFactory" package="biz.rightshift.core.rules">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/test/biz/rightshift/core/rules/test/RulesEngineTest.java" line="112" class="biz.rightshift.core.rules.test.RulesEngineTest" package="biz.rightshift.core.rules.test">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/biz/rightshift/core/rules/atomic/Gt.java" line="23" class="biz.rightshift.core.rules.atomic.Gt" package="biz.rightshift.core.rules.atomic">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -65,30 +140,146 @@
     <favorites_list name="RulesEngine" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="RulesEngineTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/biz/rightshift/core/rules/test/RulesEngineTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="112" column="0" selection-start="2647" selection-end="2647" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#587#720#0" expanded="true" />
+                <element signature="e#708#709#0" expanded="true" />
+                <element signature="e#742#917#0" expanded="true" />
+                <element signature="e#896#897#0" expanded="true" />
+                <element signature="e#919#1119#0" expanded="true" />
+                <element signature="e#1093#1094#0" expanded="true" />
+                <element signature="e#1160#1334#0" expanded="true" />
+                <element signature="e#1313#1314#0" expanded="true" />
+                <element signature="e#3698#3945#0" expanded="true" />
+                <element signature="e#3932#3933#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RuleParameter.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/biz/rightshift/core/rules/RuleParameter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="0" selection-start="369" selection-end="369" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Eq.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/biz/rightshift/core/rules/atomic/Eq.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="0" selection-start="474" selection-end="474" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AbstractRule.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/biz/rightshift/core/rules/atomic/AbstractRule.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="84" column="26" selection-start="2062" selection-end="2062" vertical-scroll-proportion="0.7623498">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Lt.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/biz/rightshift/core/rules/atomic/Lt.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="0" selection-start="504" selection-end="504" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Gt.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/biz/rightshift/core/rules/atomic/Gt.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="0" selection-start="506" selection-end="506" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ComplexMinMaxDayOfWeekRule.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/biz/rightshift/core/rules/examples/ComplexMinMaxDayOfWeekRule.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="15" selection-start="573" selection-end="573" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SimpleMinLevelRule.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/biz/rightshift/core/rules/examples/SimpleMinLevelRule.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="0" selection-start="511" selection-end="511" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RuleFactory.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/biz/rightshift/core/rules/RuleFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="33" column="0" selection-start="1392" selection-end="1392" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
+        <option value="$PROJECT_DIR$/src/biz/rightshift/core/rules/atomic/MinLevel.java" />
+        <option value="$PROJECT_DIR$/src/biz/rightshift/core/rules/atomic/MaxLevel.java" />
+        <option value="$PROJECT_DIR$/src/biz/rightshift/core/rules/atomic/Max.java" />
+        <option value="$PROJECT_DIR$/src/biz/rightshift/core/rules/AbstractRule.java" />
+        <option value="$PROJECT_DIR$/src/biz/rightshift/core/rules/atomic/AtomicRule.java" />
+        <option value="$PROJECT_DIR$/src/biz/rightshift/core/rules/RuleParameterException.java" />
+        <option value="$PROJECT_DIR$/src/biz/rightshift/core/rules/RuleParameter.java" />
         <option value="$PROJECT_DIR$/src/biz/rightshift/core/rules/Rule.java" />
         <option value="$PROJECT_DIR$/src/biz/rightshift/core/rules/RuleFactory.java" />
-        <option value="$PROJECT_DIR$/src/biz/rightshift/core/rules/AbstractRule.java" />
+        <option value="$PROJECT_DIR$/src/biz/rightshift/core/rules/atomic/Eq.java" />
+        <option value="$PROJECT_DIR$/src/biz/rightshift/core/rules/atomic/Gt.java" />
+        <option value="$PROJECT_DIR$/src/biz/rightshift/core/rules/atomic/Lt.java" />
+        <option value="$PROJECT_DIR$/src/biz/rightshift/core/rules/examples/SimpleMinLevelRule.java" />
+        <option value="$PROJECT_DIR$/src/biz/rightshift/core/rules/examples/ComplexMinMaxDayOfWeekRule.java" />
         <option value="$PROJECT_DIR$/test/biz/rightshift/core/rules/test/RulesEngineTest.java" />
+        <option value="$PROJECT_DIR$/src/biz/rightshift/core/rules/atomic/AbstractRule.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="564" />
-    <option name="y" value="26" />
-    <option name="width" value="1948" />
-    <option name="height" value="1390" />
+    <option name="x" value="1" />
+    <option name="y" value="22" />
+    <option name="width" value="2560" />
+    <option name="height" value="1414" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -144,6 +335,68 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rules_management" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RulesEngine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RulesEngine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rules_management" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RulesEngine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RulesEngine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rules_management" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RulesEngine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RulesEngine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -170,37 +423,89 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RulesEngine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RulesEngine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="examples" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RulesEngine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RulesEngine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atomic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/biz/rightshift/core/rules" />
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="OverrideImplement.combined" value="false" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="project.propCompiler" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/enterprise" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
+    <property name="FullScreen" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="biz.rightshift.core.rules.examples" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="biz.rightshift.core.rules" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/test/biz/rightshift/core/rules/test" />
       <recent name="$PROJECT_DIR$/src/biz/rightshift/core/rules" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RulesEngineTest.trueAndTrueAndTrue">
+  <component name="RunManager" selected="JUnit.RulesEngineTest.ruleFactory">
     <configuration default="false" name="RulesEngineTest.falseAndFalseOrTrueAndFalse" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="RulesEngine" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -267,6 +572,34 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
+    <configuration default="false" name="RulesEngineTest.ruleFactory" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="RulesEngine" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="biz.rightshift.core.rules.test" />
+      <option name="MAIN_CLASS_NAME" value="biz.rightshift.core.rules.test.RulesEngineTest" />
+      <option name="METHOD_NAME" value="ruleFactory" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
@@ -279,19 +612,6 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -319,6 +639,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -383,17 +716,19 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <list size="4">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.RulesEngineTest" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.RulesEngineTest.falseAndFalseOrTrueAndFalse" />
       <item index="2" class="java.lang.String" itemvalue="JUnit.RulesEngineTest.complex" />
       <item index="3" class="java.lang.String" itemvalue="JUnit.RulesEngineTest.trueAndTrueAndTrue" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.RulesEngineTest.ruleFactory" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.RulesEngineTest.trueAndTrueAndTrue" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.RulesEngineTest.complex" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.RulesEngineTest.falseAndFalseOrTrueAndFalse" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.RulesEngineTest.ruleFactory" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.RulesEngineTest.trueAndTrueAndTrue" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.RulesEngineTest.complex" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.RulesEngineTest.falseAndFalseOrTrueAndFalse" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -402,6 +737,11 @@
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SliceManager">
+    <option name="analysisUIOptions">
+      <AnalysisUIOptions />
+    </option>
+  </component>
   <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false">
     <option name="USER" value="" />
     <option name="PASSWORD" value="" />
@@ -429,29 +769,29 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="564" y="26" width="1948" height="1390" extended-state="0" />
-    <editor active="false" />
+    <frame x="1" y="22" width="2560" height="1414" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17952757" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3995363" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17952757" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998455" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20031546" sideWeight="0.67086613" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32913387" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20007956" sideWeight="0.6004637" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843894" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -514,9 +854,126 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/biz/rightshift/core/rules/Rule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="17" selection-start="170" selection-end="170" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/biz/rightshift/core/rules/atomic/AbstractRule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="75" selection-start="150" selection-end="150" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.10.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="40" selection-start="388" selection-end="388" vertical-scroll-proportion="0.21156558">
+        <state line="11" column="40" selection-start="388" selection-end="388" vertical-scroll-proportion="0.21156558" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/rules_management/config/database.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="22" selection-start="512" selection-end="512" vertical-scroll-proportion="0.23696682">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/rules_management/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="7" selection-start="175" selection-end="175" vertical-scroll-proportion="0.07109005">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar!/java/lang/ClassLoader.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="98" column="41" selection-start="5766" selection-end="5766" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/biz/rightshift/core/rules/Rule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="23" selection-start="1052" selection-end="1052" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/biz/rightshift/core/rules/atomic/Eq.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="0" selection-start="474" selection-end="474" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/biz/rightshift/core/rules/atomic/Gt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="0" selection-start="506" selection-end="506" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/biz/rightshift/core/rules/atomic/Lt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="0" selection-start="504" selection-end="504" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/biz/rightshift/core/rules/examples/ComplexMinMaxDayOfWeekRule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="15" selection-start="573" selection-end="573" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/biz/rightshift/core/rules/RuleParameter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="0" selection-start="369" selection-end="369" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/biz/rightshift/core/rules/examples/SimpleMinLevelRule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="0" selection-start="511" selection-end="511" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/biz/rightshift/core/rules/RuleFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="0" selection-start="1392" selection-end="1392" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/biz/rightshift/core/rules/test/RulesEngineTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="112" column="0" selection-start="2647" selection-end="2647" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#587#720#0" expanded="true" />
+            <element signature="e#708#709#0" expanded="true" />
+            <element signature="e#742#917#0" expanded="true" />
+            <element signature="e#896#897#0" expanded="true" />
+            <element signature="e#919#1119#0" expanded="true" />
+            <element signature="e#1093#1094#0" expanded="true" />
+            <element signature="e#1160#1334#0" expanded="true" />
+            <element signature="e#1313#1314#0" expanded="true" />
+            <element signature="e#3698#3945#0" expanded="true" />
+            <element signature="e#3932#3933#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/biz/rightshift/core/rules/atomic/AbstractRule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="84" column="26" selection-start="2062" selection-end="2062" vertical-scroll-proportion="0.7623498">
           <folding />
         </state>
       </provider>

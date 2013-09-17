@@ -1,6 +1,7 @@
 package biz.rightshift.core.rules;
 
 import java.lang.reflect.Constructor;
+import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 
 /**
@@ -12,7 +13,7 @@ public class RuleFactory {
 
     /**
      * Create a Rule using the fully qualified class name of the Rule. This could be an entry in the Database identifying
-     * the concrete Rule class. The Rule class must have a default (no parameter) constructor.
+     * the concrete Rule class.
      *
      * @param className The fully qualified class name as a String
      *
@@ -22,17 +23,22 @@ public class RuleFactory {
      * @throws IllegalAccessException
      * @throws InstantiationException
      */
-    public static Rule create(String className, String[] params) throws ClassNotFoundException, IllegalAccessException,
-            InstantiationException, NoSuchMethodException, InvocationTargetException {
+    public static Rule create(String className, RuleParameter ... parameters) throws ClassNotFoundException, IllegalAccessException,
+            InstantiationException, NoSuchMethodException, InvocationTargetException, NoSuchFieldException {
         Class<? extends Rule> tClass = (Class<? extends Rule>) Class.forName(className);
-        return create(tClass, params);
+        return create(tClass, parameters);
     }
 
-    public static Rule create(Class<? extends Rule> clazz, String[] params) throws IllegalAccessException,
-            InstantiationException, NoSuchMethodException, InvocationTargetException {
-        // we know that AbstractRule has a constructor that expects a string as an argument
-        Constructor<Rule> c = (Constructor<Rule>) clazz.getConstructor(String[].class);
-        return c.newInstance(params);
+    public static Rule create(Class<? extends Rule> clazz,RuleParameter ... parameters) throws IllegalAccessException,
+            InstantiationException, NoSuchMethodException, InvocationTargetException, NoSuchFieldException {
+        Rule rule = clazz.newInstance();
+        for(RuleParameter parameter : parameters){
+            Field f = rule.getClass().getDeclaredField(parameter.name);
+            f.setAccessible(true);
+            f.set(rule,parameter.value);
+        }
+
+        return rule;
     }
 
 }

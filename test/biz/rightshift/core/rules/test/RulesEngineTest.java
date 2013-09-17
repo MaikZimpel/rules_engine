@@ -1,15 +1,16 @@
 package biz.rightshift.core.rules.test;
 
-import biz.rightshift.core.rules.AbstractRule;
+import biz.rightshift.core.rules.RuleParameter;
+import biz.rightshift.core.rules.atomic.AbstractRule;
 import biz.rightshift.core.rules.Rule;
 import org.junit.Test;
 
 import java.lang.reflect.InvocationTargetException;
 import java.util.Calendar;
 
+import static biz.rightshift.core.rules.RuleFactory.create;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
-import static biz.rightshift.core.rules.RuleFactory.create;
 
 /**
  * Created by mzimpel on 17.09.13 for rightshift.biz
@@ -19,29 +20,38 @@ public class RulesEngineTest {
     @Test
     public void newRuleTest(){
 
-        Rule r1 = new AbstractRule("MyRule") {
+        Rule r1 = new AbstractRule() {
             @Override
             public boolean check() {
                 return true;
             }
+
         }
-                .and(new AbstractRule("MyNewRule") {
+                .and(new AbstractRule() {
                     @Override
                     public boolean check() {
                         return false;
                     }
-                }, new AbstractRule("MySecondNewRule") {
+
+
+                }, new AbstractRule() {
                          @Override
                          public boolean check() {
                              return false;
                          }
+
+
                      }
+
+
                 )
-                .or(new AbstractRule("MyThirdRule") {
+                .or(new AbstractRule() {
                     @Override
                     public boolean check() {
                         return true;
                     }
+
+
                 }
                 );
 
@@ -52,25 +62,22 @@ public class RulesEngineTest {
 
     class TrueRule extends AbstractRule {
 
-        TrueRule(){
-            super("Always True");
-        }
-
         @Override
         protected boolean check() {
             return true;  //To change body of implemented methods use File | Settings | File Templates.
         }
+
+
     }
 
     class FalseRule extends AbstractRule {
-        FalseRule() {
-            super("Always False");
-        }
 
         @Override
         protected boolean check() {
             return false;
         }
+
+
 
     }
 
@@ -100,7 +107,10 @@ public class RulesEngineTest {
     public void ruleFactory(){
 
         try {
-            assertTrue(create(TrueRule.class,new String[]{"minLevel"}).validate());
+            String name = "biz.rightshift.core.rules.examples.SimpleMinLevelRule";
+            RuleParameter[] parameters = {new RuleParameter("minLevel",1000),new RuleParameter("actualLevel",1024)};
+            Rule r = create(name, parameters);
+            assertTrue(r.validate());
         } catch (IllegalAccessException e) {
             e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
         } catch (InstantiationException e) {
@@ -109,20 +119,26 @@ public class RulesEngineTest {
             e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
         } catch (InvocationTargetException e) {
             e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+        } catch (NoSuchFieldException e) {
+            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
         }
     }
 
     @Test
     public void sundayNightThreeTimes(){
-        Rule sundayNight = new AbstractRule("Sunday Night Rule") {
+        Rule sundayNight = new AbstractRule() {
             @Override
             protected boolean check() {
                 // Implement Sunday Night Rule
                 return Calendar.getInstance().get(Calendar.DAY_OF_WEEK) == Calendar.SUNDAY;
             }
+
+
         };
 
-        Rule loginThreeTimes = new AbstractRule("Login Rule") {
+        Rule loginThreeTimes = new AbstractRule() {
 
             class User {
                 int logins = 3;
@@ -133,6 +149,8 @@ public class RulesEngineTest {
                 User u = new User();
                 return u.logins >= 3;
             }
+
+
         };
 
         assertTrue(sundayNight.and(loginThreeTimes).validate());

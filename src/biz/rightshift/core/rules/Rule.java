@@ -32,33 +32,11 @@ public interface Rule {
      */
     Rule not();
 
-    /**
-     * Greater then
-     * @param property The name property of the property to be evaluated
-     * @param value The value that needs to be compared
-     * @param <T> Must be Comparable
-     * @return
-     */
-    <T extends Comparable<T>> Rule gt(String property,T value);
+    Rule gt(Comparable min, Comparable act);
 
-    /**
-     *
-     * @param property
-     * @param value
-     * @param <T>
-     * @return
-     */
-    <T extends Comparable<T>> Rule lt(String property, T value);
+    Rule lt(Comparable max, Comparable act);
 
-    /**
-     * Equal to. Evaluates equality between a property of this Rule and the value by using the equals method of
-     * value. <b>that method has to be overwritten in order to make this work for arbitrary objects</b>
-     *
-     * @param property
-     * @param value
-     * @return
-     */
-    Rule eq(String property, Object value);
+    Rule eq(Object o,Object o1);
 
     /**
      * Validate the current Rule
@@ -66,5 +44,4 @@ public interface Rule {
      * @return <code>true</code> if the Rule and all connected Rules evaluate to true, <code>false</code> otherwise
      */
     boolean validate();
-
 }
