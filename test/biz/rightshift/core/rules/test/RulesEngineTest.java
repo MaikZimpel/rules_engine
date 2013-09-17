@@ -4,16 +4,15 @@ import biz.rightshift.core.rules.AbstractRule;
 import biz.rightshift.core.rules.Rule;
 import org.junit.Test;
 
-import static com.sun.xml.internal.bind.v2.ClassFactory.create;
+import java.lang.reflect.InvocationTargetException;
+import java.util.Calendar;
+
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
+import static biz.rightshift.core.rules.RuleFactory.create;
 
 /**
- * Created with IntelliJ IDEA.
- * User: mzimpel
- * Date: 16.09.13
- * Time: 21:03
- * To change this template use File | Settings | File Templates.
+ * Created by mzimpel on 17.09.13 for rightshift.biz
  */
 public class RulesEngineTest {
 
@@ -92,14 +91,61 @@ public class RulesEngineTest {
                 new FalseRule()
                         .and(new FalseRule())
                         .and(new FalseRule().or(new TrueRule()), new FalseRule())
-                        .or(new TrueRule().and(new FalseRule()))
+                        .or(new TrueRule().and(new FalseRule().not()))
                         .validate()
         );
     }
 
     @Test
     public void ruleFactory(){
-        assertTrue(create(TrueRule.class).validate());
+
+        try {
+            assertTrue(create(TrueRule.class,new String[]{"minLevel"}).validate());
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+        } catch (InstantiationException e) {
+            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+        } catch (NoSuchMethodException e) {
+            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+        } catch (InvocationTargetException e) {
+            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+        }
+    }
+
+    @Test
+    public void sundayNightThreeTimes(){
+        Rule sundayNight = new AbstractRule("Sunday Night Rule") {
+            @Override
+            protected boolean check() {
+                // Implement Sunday Night Rule
+                return Calendar.getInstance().get(Calendar.DAY_OF_WEEK) == Calendar.SUNDAY;
+            }
+        };
+
+        Rule loginThreeTimes = new AbstractRule("Login Rule") {
+
+            class User {
+                int logins = 3;
+            }
+
+            @Override
+            protected boolean check() {
+                User u = new User();
+                return u.logins >= 3;
+            }
+        };
+
+        assertTrue(sundayNight.and(loginThreeTimes).validate());
+    }
+
+    @Test
+    public void negate(){
+        assertFalse(new TrueRule().not().validate());
+    }
+
+    @Test
+    public void simpleRule(){
+
     }
 
 }

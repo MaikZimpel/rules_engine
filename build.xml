@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<project name="rules_engine" basedir="../../Downloads/rules_engine" default="jar">
+
+    <property file="${basedir}/build.properties"/>
+    <property name="classes-dir" value="../../Downloads/rules_engine/build/classes"/>
+    <property name="target-dir" value="../../Downloads/rules_engine/build/target"/>
+    <property name="test-dir" value="../../Downloads/rules_engine/build/tests"/>
+    <property name="test-report-dir" value="/build/test-reports"/>
+
+    <tstamp>
+        <format property="TODAY" pattern="dd-MM-yyyy" locale="en,ZA"/>
+    </tstamp>
+
+    <tstamp>
+        <format property="BUILD_TIME" pattern="ddMMyyyy-hhmmSSssss" locale="en, ZA"/>
+    </tstamp>
+
+    <target name="jar" depends="test">
+        <jar destfile="${target-dir}/${project.releasename}.jar">
+            <manifest>
+                <attribute name="Specification-Title" value="${api.name}"/>
+                <attribute name="Specification-Version" value="${api.version}"/>
+                <attribute name="Specification-Vendor" value="RightShift.biz"/>
+                <attribute name="Implementation-Title" value="${project.name}"/>
+                <attribute name="Implementation-Version" value="b${build.no}"/>
+                <attribute name="Implementation-Vendor" value="RightShift.biz"/>
+                <attribute name="Build-By" value="${user.name}"/>
+                <attribute name="Build-Date" value="${TODAY}"/>
+            </manifest>
+        </jar>
+    </target>
+
+    <target name="compile" depends="prepare">
+        <javac srcdir="src" destdir="${classes-dir}"/>
+        <javac srcdir="test" destdir="${test-dir}"/>
+    </target>
+
+    <target name="prepare" depends="clean">
+        <mkdir dir="${classes-dir}"/>
+        <mkdir dir="${target-dir}"/>
+        <mkdir dir="${test-dir}"/>
+    </target>
+
+    <target name="test" depends="compile">
+        <junit printsummary="yes" haltonfailure="yes">
+            <classpath>
+                <pathelement location="${classes-dir}"/>
+                <pathelement location="${test-dir}"/>
+                <pathelement path="${java.class.path}"/>
+            </classpath>
+            <test name="biz.rightshift.core.rules.test.RulesEngineTest" haltonfailure="no"
+                  outfile="${test-report-dir}/test-report_${build.no}_${BUILD_TIME}">
+                <formatter type="plain"/>
+                <formatter type="xml"/>
+            </test>
+        </junit>
+    </target>
+
+    <target name="clean">
+        <delete dir="${classes-dir}"/>
+        <delete dir="${target-dir}"/>
+        <delete dir="${test-dir}"/>
+    </target>
+
+</project>
