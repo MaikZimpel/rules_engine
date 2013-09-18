@@ -1,8 +1,8 @@
 package biz.rightshift.core.rules;
 
-import java.lang.reflect.Constructor;
-import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
+
+import static biz.rightshift.core.rules.ParameterMap.build;
 
 /**
  * Created by mzimpel on 17.09.13 for rightshift.biz
@@ -23,20 +23,17 @@ public class RuleFactory {
      * @throws IllegalAccessException
      * @throws InstantiationException
      */
-    public static Rule create(String className, RuleParameter ... parameters) throws ClassNotFoundException, IllegalAccessException,
+    public static Root create(String className, RuleParameter ... parameters) throws ClassNotFoundException, IllegalAccessException,
             InstantiationException, NoSuchMethodException, InvocationTargetException, NoSuchFieldException {
         Class<? extends Rule> tClass = (Class<? extends Rule>) Class.forName(className);
-        return create(tClass, parameters);
+        return new Root(create(tClass, parameters));
     }
 
-    public static Rule create(Class<? extends Rule> clazz,RuleParameter ... parameters) throws IllegalAccessException,
+    private static Rule create(Class<? extends Rule> clazz,RuleParameter ... parameters) throws IllegalAccessException,
             InstantiationException, NoSuchMethodException, InvocationTargetException, NoSuchFieldException {
+
         Rule rule = clazz.newInstance();
-        for(RuleParameter parameter : parameters){
-            Field f = rule.getClass().getDeclaredField(parameter.name);
-            f.setAccessible(true);
-            f.set(rule,parameter.value);
-        }
+        rule.build(build(parameters));
 
         return rule;
     }

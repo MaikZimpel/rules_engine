@@ -1,23 +1,21 @@
 package biz.rightshift.core.rules;
 
 /**
- * Created with IntelliJ IDEA.
- * User: mzimpel
- * Date: 17.09.13
- * Time: 23:24
- * To change this template use File | Settings | File Templates.
+ * Created by  maik on 2013/09/18 12:54 PM
+ * for rightshift.biz
  */
 public class RuleParameter {
 
-    String name;
+    String key;
     Object value;
 
-    public RuleParameter(String name, Object value){
-        this.name = name;
+    private RuleParameter(String key, Object value){
+        this.key = key;
         this.value = value;
     }
 
-
-
+    public static RuleParameter create(String key,Object value){
+        return new RuleParameter(key,value);
+    }
 
 }

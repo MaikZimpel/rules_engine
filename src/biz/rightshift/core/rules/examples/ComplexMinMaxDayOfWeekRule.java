@@ -1,8 +1,8 @@
 package biz.rightshift.core.rules.examples;
 
-import biz.rightshift.core.rules.atomic.AbstractRule;
-
-import java.util.Calendar;
+import biz.rightshift.core.rules.AbstractRule;
+import biz.rightshift.core.rules.ParameterMap;
+import biz.rightshift.core.rules.Rule;
 
 /**
  * Created by  maik on 2013/09/17 3:46 PM
@@ -14,17 +14,22 @@ import java.util.Calendar;
  */
 public class ComplexMinMaxDayOfWeekRule extends AbstractRule{
 
-    private Integer minLevel;
-    private Integer maxLevel;
-    private Integer playerLevel;
-    private int dayOfWeek;
+    Rule root;
 
     @Override
-    protected boolean check() {
-        return this
-                .and(gt(minLevel, playerLevel),lt(maxLevel, playerLevel))
-                .or(eq(dayOfWeek, Calendar.getInstance().get(Calendar.DAY_OF_WEEK)))
-                .validate();
+    public Rule build(final ParameterMap parameters) {
+        root = new SimpleDayOfWeekRule().build(parameters)
+                .and(new SimpleMaxLevelRule().build(parameters))
+                .or(new SimpleDayOfWeekRule().build(parameters));
+        return root;
     }
+
+    @Override
+    public boolean eval(final ParameterMap parameters) {
+        return root.evaluate(parameters);
+    }
+
+    
+
 
 }

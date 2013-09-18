@@ -32,16 +32,12 @@ public interface Rule {
      */
     Rule not();
 
-    Rule gt(Comparable min, Comparable act);
-
-    Rule lt(Comparable max, Comparable act);
-
-    Rule eq(Object o,Object o1);
-
     /**
-     * Validate the current Rule
+     * Evaluate the current Rule
      *
      * @return <code>true</code> if the Rule and all connected Rules evaluate to true, <code>false</code> otherwise
      */
-    boolean validate();
+    boolean evaluate(ParameterMap parameters);
+
+    Rule build(ParameterMap parameters);
 }

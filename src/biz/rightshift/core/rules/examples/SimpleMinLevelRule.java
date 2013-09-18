@@ -1,6 +1,8 @@
 package biz.rightshift.core.rules.examples;
 
-import biz.rightshift.core.rules.atomic.AbstractRule;
+import biz.rightshift.core.rules.AbstractRule;
+import biz.rightshift.core.rules.ParameterMap;
+import biz.rightshift.core.rules.Rule;
 
 /**
  * Created with IntelliJ IDEA.
@@ -12,10 +14,15 @@ import biz.rightshift.core.rules.atomic.AbstractRule;
 public class SimpleMinLevelRule extends AbstractRule {
 
     private Integer minLevel;
-    private Integer actualLevel;
 
     @Override
-    protected boolean check() {
-        return or(gt(minLevel, actualLevel),eq(minLevel, actualLevel)).validate();
+    public Rule build(ParameterMap parameters) {
+        minLevel = (Integer)parameters.get("minLevel");
+        return this;
+    }
+
+    @Override
+    public boolean eval(ParameterMap parameters) {
+        return minLevel <= (Integer)parameters.get("level");
     }
 }
